@@ -8,7 +8,7 @@ using static System.Collections.Specialized.BitVector32;
 
 namespace ThAmCo.Catering.Data
 {
-    public class MenuDbContext
+    public class MenuDbContext : DbContext
     {
         // Notes
         // - DbSet defines the database table.
@@ -81,6 +81,18 @@ namespace ThAmCo.Catering.Data
             new MenuFoodItem { MenuId = 3, FoodItemId = 3 }
             );
             builder.Entity<FoodBooking>().HasData(
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
+            new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
             new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 },
             new FoodBooking { FoodBookingId = 1, ClientReferenceId = 1, NumberOfGuests = 20, MenuId = 1 }
             );
